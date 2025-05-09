@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cliff Emmanuel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="animations.css">
+    <script defer src="animations.js"></script>
+</head>
+<body data-page="about">
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logoblack.png" alt="Cliff Emmanuel Logo" class="logo-image">
+                <span class="logo-name">Cliff Emmanuel</span>
+            </a>
+        </div>
+        <div class="menu-wrapper">
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="work.html">Works</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="about-page">
+        <!-- Headline Text Section -->
+        <section class="headline-section">
+            <div class="headline-container" data-parallax="0.2">
+                <h1 class="typing-text">Hello I'm <br>Cliff Emmanuel</h1>
+                <button class="scroll-button" aria-label="Scroll to profile" onclick="document.getElementById('profile-section').scrollIntoView({behavior: 'smooth'})"></button>
+                </button>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile-section" class="profile-section">
+            <div class="profile-description" data-reveal>
+                <p>A multidisciplinary creative based in Jakarta, working across design, photography, and video. I’m passionate about telling stories that matter, whether it’s through a single image, a moving frame, or a thoughtfully crafted visual identity.
+                    <br><br>
+                    I first explored creativity through photography and film, but found myself drawn deeper into visual storytelling as I took on roles in production houses, creative teams, and freelance projects. Over the years, I’ve grown to see design not just as visuals, but as a language—one that speaks through emotion, rhythm, and story.
+                    <br><br>
+                    I enjoy the process more than the final product—getting lost in ideas, experimenting, and letting each project shape its own direction. I believe in work that resonates, feels personal, and lingers long after it’s seen. Let’s make something that speaks.</p>
+            </div>
+            <div class="profile-image" data-reveal>
+                <img src="Profile.jpg" alt="Cliff Emmanuel Profile" class="profile-img">
+            </div>
+        </section>
+
+    
+
+       <!-- Services Section -->
+<section class="services-section" data-parallax="0.2">
+    <div class="services-intro" data-reveal>
+        <h2>My Services</h2>
+    </div>
+
+    <div class="services-grid" data-reveal>
+        <!-- Identity Column -->
+        <div class="service-column data-reveal">
+            <h3>IDENTITY</h3>
+            <ul class="service-list">
+                <li>Visual Identity & Logo</li>
+                <li>Brand Applications</li>
+                <li>Brand Identity Guideline</li>
+            </ul>
+        </div>
+
+        <!-- Printed Column -->
+        <div class="service-column" data-reveal>
+            <h3>PRINTED</h3>
+            <ul class="service-list">
+                <li>Merchandising</li>
+                <li>Posters</li>
+                <li>Collaterals</li>
+                <li>Packaging</li>
+            </ul>
+        </div>
+
+        <!-- Misc Column -->
+        <div class="service-column" data-reveal>
+            <h3>OTHERS</h3>
+            <ul class="service-list">
+                <li>Photography</li>
+                <li>Videography</li>
+                <li>Video Directing</li>
+                <li>Video Editing</li>
+            </ul>
+        </div>
+
+        <!-- Digital Column -->
+        <div class="service-column" data-reveal>
+            <h3>DIGITAL</h3>
+            <ul class="service-list">
+                <li>Website</li>
+                <li>Social Media</li>
+                <li>Motion Graphics</li>
+                <li>Animation</li>
+            </ul>
+        </div>
+
+        <!-- Environmental Column -->
+        <div class="service-column" data-reveal>
+            <h3>ENVIRONMENTAL</h3>
+            <ul class="service-list">
+                <li>Event Visual Direction</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <!-- Collaboration Section - Keeping it the same -->
+        <section class="collaboration-section" data-reveal>
+            <p class="collab-text">Interested?</p>
+            <h2 class="collab-heading"></h2>
+            <a href="contact.html" class="collab-button"></a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Cliff Emmanuel</p>
+            <p>Jakarta & Bandung, ID</p>
+        </div>
+        <div class="footer-right">
+            <a href="http://dribbble.com/cliffemmnl">Dribbble</a>
+            <a href="https://www.instagram.com/cliffemmnl/">Instagram</a>
+            <a href="mailto:cliffemmnl@email.com">Email</a>
+        </div>
+    </footer>
+</body>
+</html>

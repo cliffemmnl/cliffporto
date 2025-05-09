@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliff Emmanuel Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="animations.css">
+    <script defer src="animations.js"></script>
+</head>
+<body data-page="contact">
+    <!-- Header -->
+   <!-- Updated Header Section for index.html -->
+<header>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="logoblack.png" alt="Cliff Emmanuel Logo" class="logo-image">
+            <span class="logo-name">Cliff Emmanuel</span>
+        </a>
+    </div>
+    <div class="menu-wrapper">
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="work.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Contact Content -->
+    <!-- Main Contact Content -->
+    <main class="contact-page">
+        <h1 class="contact-title">Let's Connect</h1>
+        <div class="contact-form-container">
+            <form class="contact-form" action="https://formsubmit.co/cliffemmnl@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="contact.html?submitted=true">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-row">
+                    <label for="name">Hello, My Name is</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Here's My Contact</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="needs">I'm Looking for</label>
+                    <textarea id="needs" name="needs" placeholder="Your Needs" required></textarea>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Thank You Popup -->
+    <div id="thank-you-popup" class="thank-you-popup">
+        <p>Thank you! Your message has been sent.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Cliff Emmanuel</p>
+            <p>Jakarta & Bandung, ID</p>
+        </div>
+        <div class="footer-right">
+            <a href="http://dribbble.com/cliffemmnl">Dribbble</a>
+            <a href="https://www.instagram.com/cliffemmnl/">Instagram</a>
+            <a href="mailto:cliffemmnl@email.com">Email</a>
+        </div>
+    </footer>
+</body>
+</html>

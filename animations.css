@@ -1,0 +1,120 @@
+/* ===============================================
+   ANIMATION BASE STYLES
+   =============================================== */
+
+/* Hidden elements (starting state) */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Revealed elements (end state) */
+.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide direction variations */
+[data-reveal="left"].hidden {
+    transform: translateX(-50px);
+}
+
+[data-reveal="right"].hidden {
+    transform: translateX(50px);
+}
+
+[data-reveal="up"].hidden {
+    transform: translateY(30px);
+}
+
+[data-reveal="down"].hidden {
+    transform: translateY(-30px);
+}
+
+[data-reveal="scale"].hidden {
+    transform: scale(0.9);
+}
+
+[data-reveal="rotate"].hidden {
+    transform: rotate(-5deg) translateY(30px);
+}
+
+/* Revealed state is the same for all variations */
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translate(0) scale(1) rotate(0);
+}
+
+/* ===============================================
+   TEXT REVEAL ANIMATIONS
+   =============================================== */
+
+/* Text reveal base */
+.text-reveal-ready .reveal-word,
+.text-reveal-ready .reveal-char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    overflow: hidden;
+}
+
+/* Text reveal active state */
+.text-revealed .reveal-word,
+.text-revealed .reveal-char {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text reveal word spacing */
+.reveal-word {
+    margin-right: 0.25em;
+}
+
+/* ===============================================
+   STAGGERED LIST ANIMATIONS
+   =============================================== */
+
+/* Staggered list items */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Staggered list revealed state */
+.stagger-revealed .stagger-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===============================================
+   SIMPLE HOVER EFFECT
+   =============================================== */
+
+/* Simple hover effect for all interactive elements */
+a, button, .project, .interactive {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover-active {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* ===============================================
+   MEDIA QUERIES
+   =============================================== */
+
+@media (max-width: 768px) {
+    /* Adjust animation values for mobile */
+    .hidden {
+        transform: translateY(20px);
+    }
+    
+    [data-reveal="left"].hidden, 
+    [data-reveal="right"].hidden {
+        transform: translateY(20px);
+    }
+}

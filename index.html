@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliff Emmanuel Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="animations.css">
+    <script defer src="animations.js"></script>
+</head>
+<body data-page="home">
+ <div class="page-content-wrapper">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logoblack.png" alt="Cliff Emmanuel Logo" class="logo-image">
+                <span class="logo-name">Cliff Emmanuel</span>
+            </a>
+        </div>
+        <div class="menu-wrapper">
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="work.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="mobile-menu-overlay">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="work.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    <!-- Hero Section with Parallax Scrolling -->
+    <section id="hero" class="parallax-hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('SUWOW/SUWOW\ PINS.png');">
+                <div class="slide-content parallax-element" data-speed="-0.2">
+                    <h2 class="slide-title">Design</h2>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('GMS\ LIVE\ ROTO/DSC00902.jpg');">
+                <div class="slide-content parallax-element" data-speed="-0.2">
+                    <h2 class="slide-title">Photo</h2>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('YouthQuake/youthquake\ thumbnail.mov');">
+                <div class="slide-content parallax-element" data-speed="-0.2">
+                    <h2 class="slide-title">Video</h2>
+                </div>
+            </div>
+        </div>
+        <div class="hero-navigation parallax-element" data-speed="-0.15">
+        </div>
+        <div class="slide-counter parallax-element" data-speed="-0.1">
+            <span class="counter-current">01</span>
+            <span class="counter-total">/ 03</span>
+            <div class="counter-progress">
+                <div class="counter-progress-bar" style="width: 33.33%;"></div>
+            </div>
+        </div>
+    </section>
+        
+        <!-- Description Section -->
+        <section class="about-container">
+            <div class="about-text" data-reveal>
+                <p>I’m Cliff Emmanuel, a freelance creative working across design, photography, and video. I help people and projects find their voice through visuals that feel personal, purposeful, and bold. Every frame, layout, and cut is shaped with intention—because good work should not only look good, but say something.
+                <br><br>
+                    My journey has taken me through production houses, creative teams, and self-initiated projects—each one sharpening my eye for storytelling. I believe in visuals that stay with you long after the screen fades to black.</p>
+            </div>
+            <div class="freelance-info" data-reveal>
+                <p>Creating distinct, story-driven visual that help you connect with your audience through personal and meaningful experience.</p>
+                <div class="freelance-link">
+                    <div class="arrow-icon" data-reveal></div>
+                    <a href="about.html" class="freelance-text">Freelance<br>Creative</a>
+                </div>
+            </div>
+        </section>
+        
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="project">
+                <a href="sakatupo.html">
+                    <div class="project-image">
+                        <img src="Sakatupo/Sakatupo Thumbnail.mov" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Satu Kakak Tujuh Ponakan</h3>
+                        <p>Animated Credit Sequence</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project">
+                <a href="SUWOW.html">
+                    <div class="project-image">
+                        <img src="SUWOW/SUWOW COVER.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>SUWOW</h3>
+                        <p>Event Visual Direction</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project">
+                <a href="gmsliveroto.html">
+                    <div class="project-image">
+                        <img src="GMS LIVE ROTO/DSC00794.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>GMS LIVE Road Tour</h3>
+                        <p>Stage Photography</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project">
+                <a href="AKTU.html">
+                    <div class="project-image">
+                        <video src="AKTU/CLIFF_AKTU Walking Cycle.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="project-info">
+                        <h3>AKTU</h3>
+                        <p>Identity</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+        
+        <!-- Collaboration Section -->
+        <section class="collaboration-section" data-reveal>
+            <p class="collab-text">Interested?</p>
+            <h2 class="collab-heading"></h2>
+            <a href="contact.html" class="collab-button"></a>
+        </section>      
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p>Cliff Emmanuel</p>
+                <p>Jakarta & Bandung, ID</p>
+            </div>
+            <div class="footer-right">
+                <a href="http://dribbble.com/cliffemmnl">Dribbble</a>
+                <a href="https://www.instagram.com/cliffemmnl/">Instagram</a>
+                <a href="mailto:cliffemmnl@email.com">Email</a>
+            </div>
+        </footer>    
+</div>    
+</body>
+</html>
