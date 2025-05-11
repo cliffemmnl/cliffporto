@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     popup.style.display = "none";
                     
                     // Remove URL parameter
-                    const url = new URL(window.location.href = contact.html);
+                    const url = new URL(window.location.href = contact);
                     url.searchParams.delete("submitted");
                     window.history.replaceState({}, document.title, url);
                 }, 300);
