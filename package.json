@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cloudinary-cli": "^1.1.2"
+  }
+}

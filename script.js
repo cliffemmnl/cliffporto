@@ -239,17 +239,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // THANK YOU POPUP CONTACT PAGE
 document.addEventListener("DOMContentLoaded", function () {
+    // Check for form submission success parameter
     const params = new URLSearchParams(window.location.search);
     if (params.get("submitted") === "true") {
         const popup = document.getElementById("thank-you-popup");
         if (popup) {
+            // Show popup
             popup.style.display = "block";
+            // transition class
+            popup.classList.add("show-popup");
+            
+            // Hide popup after delay and remove URL parameter
             setTimeout(() => {
-                popup.style.display = "none";
-                const url = new URL(window.location);
-                url.searchParams.delete("submitted");
-                window.history.replaceState({}, document.title, url.pathname);
-            }, 4000);
+                popup.classList.remove("show-popup");
+                setTimeout(() => {
+                    popup.style.display = "none";
+                    
+                    // Remove URL parameter
+                    const url = new URL(window.location.href = contact.html);
+                    url.searchParams.delete("submitted");
+                    window.history.replaceState({}, document.title, url);
+                }, 300);
+            }, 3000);
         }
     }
 });

@@ -1855,18 +1855,54 @@ html {
     background-color: #555;
 }
 
+/* Thank You Popup */
 .thank-you-popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: #1C1C1C;
-    color: #fff;
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.thank-you-popup.show-popup {
+    opacity: 1;
+    transform: translateX(-50%) translateY(10px);
+}
+
+.thank-you-popup p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Form Focus Styles */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #444;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* Submit Button Hover Animation */
+.submit-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    background-color: #222;
+}
+
+.submit-button:active {
+    transform: translateY(1px);
 }
 
 
